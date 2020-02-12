@@ -546,6 +546,7 @@ textarea{resize: none;height: 80px!important;}
     .explore h2,.upcoming-events h2,.recommendations header h2{font-size: 32px !important;}
     .explore h4,.upcoming-events h4,.recommendations h4{font-size: 18px !important;}
     .upcoming-events .event-item img{height: 200px !important;}
+    .upcoming-events .event-item h5{font-size: 28px !important;}
     .upcoming-events .event-infoContainer{padding: 0 !important; padding-right: 5px !important; }
     .upcoming-events .event-infoContainer .event-details{font-size: 13px;}
     .explore-tabs a{font-size: 16px !important;}
