@@ -160,7 +160,7 @@ background-color: #FF9100;
 .events-tabs #pills-weekend-tab.active::after{width: 56px; left: 43px;}
 
 .upcoming-events .event-item img{height: 280px; object-fit: cover; cursor: pointer;}
-.upcoming-events .event-item{position: relative; box-shadow: 2px 2px 20px #dfdfdf;}
+.upcoming-events .event-item{position: relative; box-shadow: 2px 2px 5px #dfdfdf;}
 .upcoming-events .event-item header h5{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 36px;
@@ -535,7 +535,12 @@ textarea{resize: none;height: 80px!important;}
 
 
 /**************************************Media Query**************************************/
+@media only screen and (max-width: 576px){
 
+    .upcoming-events .event-item{margin-left: 25px !important; margin-right: 25px !important;}
+    .upcoming-events .event-item img{height: 200px !important;}
+    .upcoming-events .event-infoContainer{padding: 0 !important; padding-right: 5px !important; }
+}
 
 @media only screen and (max-width: 767px){
 /* ///////////////////////////////////////////////// Home Page */
@@ -545,10 +550,8 @@ textarea{resize: none;height: 80px!important;}
     .stars i{font-size: 30px;}
     .explore h2,.upcoming-events h2,.recommendations header h2{font-size: 32px !important;}
     .explore h4,.upcoming-events h4,.recommendations h4{font-size: 18px !important;}
-    .upcoming-events .event-item img{height: 200px !important;}
-    .upcoming-events .event-item{margin-left: 25px !important; margin-right: 25px !important;}
+    .upcoming-events .events{padding-right: 30px; padding-left: 30px;}
     .upcoming-events .event-item h5{font-size: 28px !important;}
-    .upcoming-events .event-infoContainer{padding: 0 !important; padding-right: 5px !important; }
     .upcoming-events .event-infoContainer .event-details{font-size: 13px;}
     .explore-tabs a{font-size: 16px !important;}
     .explore-tabs #pills-style-tab.active::after{width: 60px; left: 54px;}
@@ -593,6 +596,9 @@ textarea{resize: none;height: 80px!important;}
 }
 
 @media only screen and (max-width: 991px){
+    
+    .upcoming-events .event-item h5{font-size: 34px !important;}
+    .upcoming-events .event-infoContainer .event-details{font-size: 13px;}
 /* ///////////////////////////////////////////////// Egypt Style Page */
     #yourEgyptStyle-page .style-type img{height: 450px }
     .style-type-blur{height: 450px;}
