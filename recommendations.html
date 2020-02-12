@@ -1,0 +1,517 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recommendations</title>
+        
+        <link rel="stylesheet" href="./fonts/impact.ttf">
+    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/style.css">
+    
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+    
+        <script src="https://kit.fontawesome.com/c11d91a1cf.js" crossorigin="anonymous"></script>
+    
+    
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+        <script src="js/owl.carousel.js"></script>
+    
+        <script src="js/scripts.js"></script>
+    </head>
+    <body id="recommendations-page">
+        <header>
+            <!--Topbar-->
+            <div class="top-bar-section">
+                <div class="container">
+                    <div class="top-bar justify-content-end">
+                        <ul class="nav join-us mr-2">
+                            <li class="nav-item">
+                              <a class="nav-link text-uppercase" href="./login.html">Login</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-uppercase" href="./signup.html">Signup</a>
+                            </li>
+                        </ul>
+                        <ul class="nav search-favourites pl-4 pr-3">
+                            <li class="nav-item"><i class="fas fa-lg fa-search"></i></li>
+                            <li class="nav-item heart">
+                                <a href="favourites.html">
+                                    <i class="far fa-lg fa-heart"></i>
+                                    <span class="text-center">3</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Navbar-section-->
+            <nav class="navbar navbar-expand-lg navbar-section p-0">
+                <div class="container">
+                    <a class="navbar-brand text-uppercase p-0 m-0" href="./index.html">Fosha</a>
+                    <button class="navbar-toggler btn-list" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"><i class="fas fa-list mt-1"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse mt-2" id="navbarNav">
+                      <ul class="navbar-nav navbar-list w-100 justify-content-end">
+                        <li class="nav-item active">
+                          <a class="nav-link text-capitalize" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-capitalize" href="./index.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-capitalize" href="./index.html">Explore</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-capitalize" href="./index.html">things to do</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-capitalize" href="./index.html">recommendations</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-capitalize" href="./contact-us.html">contact us</a>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="recommendations-main">
+                <div class="recommendations-blur">
+                </div>
+            </div>
+
+            <div class="categorization">
+                <div class="container">
+                    <div class="Catogrization-content py-4">
+                        <div class="d-flex justify-content-between categorizations-contain">
+                            <h2 class="text-capitalize mb-0">All Recommendations</h2>
+                            <div class="dropdown m-0 p0">
+                                <button class="btn btn-secondary dropdown-toggle p-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Recommendations category
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="all-recommendations">
+                <div class="container">
+                    <section class="row my-5">
+                        <article class="col-lg-4 col-md-6 mb-4">
+                            <div class="card w-100" style="width: 18rem;">
+                                <a class="p-0" href="./event-details.html">
+                                    <img src="./images/recommendations/recommend1.jpeg">
+                                </a>
+                                <div class="card-body">  
+                                    <header class="pb-2">
+                                        <h5 class="card-title m-0 text-capitalize">Event name</h5>
+                                        <p class="text-capitalize">sports, family & Entertainment</p>
+                                    </header>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <footer class="recommendation-footer">
+                                        <p>Published on <span>Februry 14, 2020</span></p>
+                                        <p>By <span>Menna Elhagrasy</span></p>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-lg-4 col-md-6 mb-4">
+                            <div class="card w-100" style="width: 18rem;">
+                                <a class="p-0" href="./event-details.html">
+                                    <img src="./images/recommendations/recommend2.jpeg">
+                                </a>
+                                <div class="card-body">  
+                                    <header class="pb-2">
+                                        <h5 class="card-title m-0 text-capitalize">Event name</h5>
+                                        <p class="text-capitalize">sports, family & Entertainment</p>
+                                    </header>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <footer class="recommendation-footer">
+                                        <p>Published on <span>Februry 14, 2020</span></p>
+                                        <p>By <span>Menna Elhagrasy</span></p>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-lg-4 col-md-6 mb-4">
+                            <div class="card w-100" style="width: 18rem;">
+                                <a class="p-0" href="./event-details.html">
+                                    <img src="./images/recommendations/recommend3.jpeg">
+                                </a>
+                                <div class="card-body">  
+                                    <header class="pb-2">
+                                        <h5 class="card-title m-0 text-capitalize">Event name</h5>
+                                        <p class="text-capitalize">sports, family & Entertainment</p>
+                                    </header>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <footer class="recommendation-footer">
+                                        <p>Published on <span>Februry 14, 2020</span></p>
+                                        <p>By <span>Menna Elhagrasy</span></p>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-lg-4 col-md-6 mb-4">
+                            <div class="card w-100" style="width: 18rem;">
+                                <a class="p-0" href="./event-details.html">
+                                    <img src="./images/recommendations/recommend4.jpeg">
+                                </a>
+                                <div class="card-body">  
+                                    <header class="pb-2">
+                                        <h5 class="card-title m-0 text-capitalize">Event name</h5>
+                                        <p class="text-capitalize">sports, family & Entertainment</p>
+                                    </header>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <footer class="recommendation-footer">
+                                        <p>Published on <span>Februry 14, 2020</span></p>
+                                        <p>By <span>Menna Elhagrasy</span></p>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-lg-4 col-md-6 mb-4">
+                            <div class="card w-100" style="width: 18rem;">
+                                <a class="p-0" href="./event-details.html">
+                                    <img src="./images/recommendations/recommend5.jpg">
+                                </a>
+                                <div class="card-body">  
+                                    <header class="pb-2">
+                                        <h5 class="card-title m-0 text-capitalize">Event name</h5>
+                                        <p class="text-capitalize">sports, family & Entertainment</p>
+                                    </header>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <footer class="recommendation-footer">
+                                        <p>Published on <span>Februry 14, 2020</span></p>
+                                        <p>By <span>Menna Elhagrasy</span></p>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-lg-4 col-md-6 mb-4">
+                            <div class="card w-100" style="width: 18rem;">
+                                <a class="p-0" href="./event-details.html">
+                                    <img src="./images/recommendations/recommend6.jpg">
+                                </a>
+                                <div class="card-body">  
+                                    <header class="pb-2">
+                                        <h5 class="card-title m-0 text-capitalize">Event name</h5>
+                                        <p class="text-capitalize">sports, family & Entertainment</p>
+                                    </header>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <footer class="recommendation-footer">
+                                        <p>Published on <span>Februry 14, 2020</span></p>
+                                        <p>By <span>Menna Elhagrasy</span></p>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-lg-4 col-md-6 mb-4">
+                            <div class="card w-100" style="width: 18rem;">
+                                <a class="p-0" href="./event-details.html">
+                                    <img src="./images/recommendations/recommend7.jpg">
+                                </a>
+                                <div class="card-body">  
+                                    <header class="pb-2">
+                                        <h5 class="card-title m-0 text-capitalize">Event name</h5>
+                                        <p class="text-capitalize">sports, family & Entertainment</p>
+                                    </header>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <footer class="recommendation-footer">
+                                        <p>Published on <span>Februry 14, 2020</span></p>
+                                        <p>By <span>Menna Elhagrasy</span></p>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-lg-4 col-md-6 mb-4">
+                            <div class="card w-100" style="width: 18rem;">
+                                <a class="p-0" href="./event-details.html">
+                                    <img src="./images/recommendations/recommend8.jpg">
+                                </a>
+                                <div class="card-body">  
+                                    <header class="pb-2">
+                                        <h5 class="card-title m-0 text-capitalize">Event name</h5>
+                                        <p class="text-capitalize">sports, family & Entertainment</p>
+                                    </header>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <footer class="recommendation-footer">
+                                        <p>Published on <span>Februry 14, 2020</span></p>
+                                        <p>By <span>Menna Elhagrasy</span></p>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-lg-4 col-md-6 mb-4">
+                            <div class="card w-100" style="width: 18rem;">
+                                <a class="p-0" href="./event-details.html">
+                                    <img src="./images/recommendations/recommend9.jpg">
+                                </a>
+                                <div class="card-body">  
+                                    <header class="pb-2">
+                                        <h5 class="card-title m-0 text-capitalize">Event name</h5>
+                                        <p class="text-capitalize">sports, family & Entertainment</p>
+                                    </header>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <footer class="recommendation-footer">
+                                        <p>Published on <span>Februry 14, 2020</span></p>
+                                        <p>By <span>Menna Elhagrasy</span></p>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-lg-4 col-md-6 mb-4">
+                            <div class="card w-100" style="width: 18rem;">
+                                <a class="p-0" href="./event-details.html">
+                                    <img src="./images/recommendations/recommend10.jpg">
+                                </a>
+                                <div class="card-body">  
+                                    <header class="pb-2">
+                                        <h5 class="card-title m-0 text-capitalize">Event name</h5>
+                                        <p class="text-capitalize">sports, family & Entertainment</p>
+                                    </header>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <footer class="recommendation-footer">
+                                        <p>Published on <span>Februry 14, 2020</span></p>
+                                        <p>By <span>Menna Elhagrasy</span></p>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-lg-4 col-md-6 mb-4">
+                            <div class="card w-100" style="width: 18rem;">
+                                <a class="p-0" href="./event-details.html">
+                                    <img src="./images/recommendations/recommend11.jpg">
+                                </a>
+                                <div class="card-body">  
+                                    <header class="pb-2">
+                                        <h5 class="card-title m-0 text-capitalize">Event name</h5>
+                                        <p class="text-capitalize">sports, family & Entertainment</p>
+                                    </header>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <footer class="recommendation-footer">
+                                        <p>Published on <span>Februry 14, 2020</span></p>
+                                        <p>By <span>Menna Elhagrasy</span></p>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-lg-4 col-md-6 mb-4">
+                            <div class="card w-100" style="width: 18rem;">
+                                <a class="p-0" href="./event-details.html">
+                                    <img src="./images/recommendations/recommend12.jpg">
+                                </a>
+                                <div class="card-body">  
+                                    <header class="pb-2">
+                                        <h5 class="card-title m-0 text-capitalize">Event name</h5>
+                                        <p class="text-capitalize">sports, family & Entertainment</p>
+                                    </header>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <footer class="recommendation-footer">
+                                        <p>Published on <span>Februry 14, 2020</span></p>
+                                        <p>By <span>Menna Elhagrasy</span></p>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-lg-4 col-md-6 mb-4">
+                            <div class="card w-100" style="width: 18rem;">
+                                <a class="p-0" href="./event-details.html">
+                                    <img src="./images/recommendations/recommend13.jpg">
+                                </a>
+                                <div class="card-body">  
+                                    <header class="pb-2">
+                                        <h5 class="card-title m-0 text-capitalize">Event name</h5>
+                                        <p class="text-capitalize">sports, family & Entertainment</p>
+                                    </header>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <footer class="recommendation-footer">
+                                        <p>Published on <span>Februry 14, 2020</span></p>
+                                        <p>By <span>Menna Elhagrasy</span></p>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-lg-4 col-md-6 mb-4">
+                            <div class="card w-100" style="width: 18rem;">
+                                <a class="p-0" href="./event-details.html">
+                                    <img src="./images/recommendations/recommend14.jpg">
+                                </a>
+                                <div class="card-body">  
+                                    <header class="pb-2">
+                                        <h5 class="card-title m-0 text-capitalize">Event name</h5>
+                                        <p class="text-capitalize">sports, family & Entertainment</p>
+                                    </header>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <footer class="recommendation-footer">
+                                        <p>Published on <span>Februry 14, 2020</span></p>
+                                        <p>By <span>Menna Elhagrasy</span></p>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-lg-4 col-md-6 mb-4">
+                            <div class="card w-100" style="width: 18rem;">
+                                <a class="p-0" href="./event-details.html">
+                                    <img src="./images/recommendations/recommend15.jpeg">
+                                </a>
+                                <div class="card-body">  
+                                    <header class="pb-2">
+                                        <h5 class="card-title m-0 text-capitalize">Event name</h5>
+                                        <p class="text-capitalize">sports, family & Entertainment</p>
+                                    </header>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <footer class="recommendation-footer">
+                                        <p>Published on <span>Februry 14, 2020</span></p>
+                                        <p>By <span>Menna Elhagrasy</span></p>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-lg-4 col-md-6 mb-4">
+                            <div class="card w-100" style="width: 18rem;">
+                                <a class="p-0" href="./event-details.html">
+                                    <img src="./images/recommendations/recommend16.jpeg">
+                                </a>
+                                <div class="card-body">  
+                                    <header class="pb-2">
+                                        <h5 class="card-title m-0 text-capitalize">Event name</h5>
+                                        <p class="text-capitalize">sports, family & Entertainment</p>
+                                    </header>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <footer class="recommendation-footer">
+                                        <p>Published on <span>Februry 14, 2020</span></p>
+                                        <p>By <span>Menna Elhagrasy</span></p>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-lg-4 col-md-6 mb-4">
+                            <div class="card w-100" style="width: 18rem;">
+                                <a class="p-0" href="./event-details.html">
+                                    <img src="./images/recommendations/recommend17.jpg">
+                                </a>
+                                <div class="card-body">  
+                                    <header class="pb-2">
+                                        <h5 class="card-title m-0 text-capitalize">Event name</h5>
+                                        <p class="text-capitalize">sports, family & Entertainment</p>
+                                    </header>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <footer class="recommendation-footer">
+                                        <p>Published on <span>Februry 14, 2020</span></p>
+                                        <p>By <span>Menna Elhagrasy</span></p>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-lg-4 col-md-6 mb-4">
+                            <div class="card w-100" style="width: 18rem;">
+                                <a class="p-0" href="./event-details.html">
+                                    <img src="./images/recommendations/recommend18.jpg">
+                                </a>
+                                <div class="card-body">  
+                                    <header class="pb-2">
+                                        <h5 class="card-title m-0 text-capitalize">Event name</h5>
+                                        <p class="text-capitalize">sports, family & Entertainment</p>
+                                    </header>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <footer class="recommendation-footer">
+                                        <p>Published on <span>Februry 14, 2020</span></p>
+                                        <p>By <span>Menna Elhagrasy</span></p>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </main>
+        
+        <footer id="main-footer">
+            <div id="main-footer-blur">
+                <div class="container">
+                    <div class="row footer-content pt-5">
+                        <div class="fosha-social col-lg-3 col-md-4 my-4">
+                            <h2 class="text-uppercase text-center m-0 p-0">Fosha</h2>
+                            <ul class="nav social-items d-flex justify-content-center pt-3">
+                                <li class="nav-item mx-1 social-item">
+                                  <a class="nav-link active" href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="nav-item mx-1 social-item">
+                                  <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="nav-item mx-1 social-item">
+                                  <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li class="nav-item mx-1 social-item">
+                                  <a class="nav-link" href="#"><i class="fab fa-youtube"></i></a>
+                                </li>
+                              </ul>
+                        </div>
+                        <div class="col-lg-9 col-md-8 row footer-informations">
+                            <div class="col-lg-3 col-md-6 footer-info mb-4">
+                                <header class="mb-4">
+                                    <h3 class="text-uppercase">locations</h3>
+                                </header>
+                                <h5 class="text-capitalize pt-2">main office</h5>
+                                <p>62F Eltahrir Street, Giza Egypt 1981</p>
+                                <div class="location">
+                                    <i class="fas fa-sm fa-map-marker-alt"></i>
+                                    <a class="text-capitalize"  target="_blank" href="https://www.google.com/maps/place/%D9%85%D8%B7%D8%A7%D8%B9%D9%85+%D8%A7%D9%84%D8%B5%D8%A8%D8%A7%D8%AD%D9%8A%E2%80%AD/@31.0484846,31.3949347,17.99z/data=!4m5!3m4!1s0x14f79db9d4d56311:0x20865e69799bfe11!8m2!3d31.0492718!4d31.3963455">Google map</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 footer-info mb-4">
+                                <header class="mb-4">
+                                    <h3 class="text-uppercase">Events</h3>
+                                </header>
+                                <nav class="nav flex-column pt-2">
+                                    <a class="nav-link active text-capitalize p-0 mb-3" href="./event-calender.html">Event calender</a>
+                                    <a class="nav-link text-capitalize p-0 mb-3" href="./submit-event.html">submit an Event</a>
+                                </nav>
+                            </div>
+                            <div class="col-lg-3 col-md-6 footer-info mb-4">
+                                <header class="mb-4">
+                                    <h3 class="text-uppercase">Know more</h3>
+                                </header>
+                                <nav class="nav flex-column pt-2">
+                                    <a class="nav-link text-capitalize p-0 mb-3" href="#">travel agencies</a>
+                                    <a class="nav-link text-capitalize p-0 mb-3" href="./recommendations.html">recommendations</a>
+                                </nav>
+                            </div>
+                            <div class="col-lg-3 col-md-6 footer-info mb-4">
+                                <header class="mb-4">
+                                    <h3 class="text-uppercase">Contact</h3>
+                                </header>
+                                <nav class="nav flex-column pt-2">
+                                    <a class="nav-link active text-capitalize p-0 mb-3" href="#">plan your trip</a>
+                                    <a class="nav-link text-capitalize p-0 mb-3" href="#">submit recommendation</a>
+                                </nav>
+                                <div class="d-flex contact justify-content-center mr-4">
+                                    <a class="btn text-capitalize" href="./contact-us.html">contact us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-rights py-2 text-center">
+                <p class="m-0">All copyrights are reserved for <span class="text-uppercase">Fosha</sapn></p>
+            </div>
+        </footer>
+    </body>
+</html>        

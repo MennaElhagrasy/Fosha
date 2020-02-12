@@ -1,0 +1,612 @@
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+a:hover{text-decoration: none !important;color: #000;}
+header{position: relative;}
+/*----------Top bar----------*/
+.top-bar-section{width: 100%; background:linear-gradient(45deg, #2e2314, #000); font-size: 12px;}
+.top-bar{display: flex; padding: 5px 0;}
+.top-bar ul, .top-bar ul li{display: inline-block;color: #fff;}
+.top-bar a{color: #fff;}
+.join-us{ position: relative;}
+.join-us a{ color: #FF9100; font-weight: bold;}
+.join-us a:hover{ color: #fff; transition: all 0.3s ease-in-out;}
+.join-us::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 17px;
+    background-color: #fff;
+    top: 8px;
+    right: -10px;
+}
+.top-bar .search-favourites{display: flex;align-items: center; position: relative;}
+.top-bar .search-favourites li:first-of-type{padding-right: 25px;}
+.top-bar .search-favourites span{
+position: absolute;
+top: 3px;
+right: 3px;
+padding: 1px 5px;
+font-size: 12px;
+border-radius: 5px;
+background-color: #FF9100;
+}
+
+/*----------Nav-bar----------*/
+.navbar-section{width: 100%;background-color: #000;}
+.navbar-section .btn-list{color: #fff;border-color: rgba(255,255,255,.1);}
+.navbar-section > div > a, .fosha-social h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #FF9100;
+    font-size: 43px;
+}
+.navbar-list a{
+    color: #fff;
+    height: 40px;
+    padding: 5px !important;
+    margin: 0 5px;
+    transition: all 0.3s ease-in-out;
+}
+.navbar-list a:hover{color: #FF9100;border-bottom: 1px solid #FF9100;}
+
+/*----------carusel style----------*/
+#carousel img{height: 600px;object-fit: cover;}
+#carousel .carousel-item{position: relative;}
+#carousel .carousel-blur{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+}
+.carousel-item .slide-caption {top: 210px;}
+.carousel-item h2{font-size: 65px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+.carousel-item:first-of-type .slide-caption {top: 200px;}
+.carousel-item:first-of-type h2{font-size: 80px;}
+
+/*----------About us----------*/
+.aboutus h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
+}
+.stars{color: #FF9100;width:340px;margin: 0 auto;}
+.stars i{margin: 0 5px; font-size: 48px;}
+.aboutus p, #yourEgyptStyle-body .aboutEgyptStyle p{margin: 20px 0; padding: 0 15px;}
+
+/* Explore Section */
+.explore, .recommendations{background-color: #F4F4F4;}
+/* */
+.explore header h2,.upcoming-events .main-event-header h2, .recommendations header h2, .gallery header h2, .partners header h2{
+    font-size: 50px;
+    color: #FF9100;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.explore header h2,.explore header h4, .upcoming-events .main-event-header h2, .upcoming-events .main-event-header h4{margin-bottom: 0;}
+.explore header h4, .upcoming-events .main-event-header h4,.recommendations header h4, .gallery header h4, .partners header h4{font-size: 22px; color: #808080;}
+
+
+.explore-tabs a,.events-tabs a,.profile-tabs a{color: #808080;font-size: 24px;font-weight: bolder;}
+.explore-tabs a.active,.events-tabs a.active,.profile-tabs a.active{color: #FF9100; position: relative;}
+.explore-tabs a.active::after,.events-tabs a.active::after,.profile-tabs a.active::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    background-color: #FF9100;
+    top: 45px;
+}
+.explore-tabs #pills-style-tab.active::after{width: 90px; left: 66px;}
+.explore-tabs #pills-todo-tab.active::after{width: 80px; left: 51.5px;}
+
+.tab-content{padding: 0 15px;}
+.tab-content .style-item img, .tab-content .todo-item img{height: 370px; object-fit: cover;}
+.tab-content .style-item, .tab-content .todo-item{
+    position: relative; 
+    overflow: hidden; 
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab-content .style-item .style-btn, .tab-content .todo-item .todo-btn{
+    position: absolute;background-color: #FF9100;padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tab-content .style-item .style-btn a, .tab-content .todo-item .todo-btn a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0;
+}
+
+/* hover img*/
+.tab-content .style-item:hover img, .tab-content .todo-item:hover img{transform: scale(1.07);transition: all 1.3s ease;}
+.tab-content .style-item:hover .style-btn a, .tab-content .todo-item:hover .todo-btn a {font-size: 22px;}
+.tab-content .style-item:hover .style-btn, .tab-content .todo-item:hover .todo-btn{
+    border: 4px solid #FF9100;
+    background-color: transparent;
+    top: 167px;
+    height: 44px;
+    transition: all 0.5s ease;
+    box-sizing: content-box;
+}
+
+/*  Trends  */
+
+.trends #carousel img{height: 550px;object-fit: cover;}
+.trends #carousel .carousel-blur{background-color: rgba(0, 0, 0, 0.3);}
+.trends .carousel-indicators li {width: 10px; height: 10px; border-radius: 50%;}
+.carousel-item .trend-caption {top:0; padding: 0; min-height: 200px;}
+.carousel-item .trend-caption .jumbotron {background-color: transparent; margin-top: calc((50% - 200px) / 2 );}
+.carousel-item .trend-caption .jumbotron h2{font-size: 60px;}
+.carousel-item .trend-caption .jumbotron p,.carousel-item .trend-caption .jumbotron a{font-size: 18px;}
+.carousel-item .trend-caption .jumbotron a{
+    border: 4px solid #FF9100;
+    background-color: transparent; 
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0;
+}
+.carousel-item .trend-caption .jumbotron a:hover{background-color: #FF9100;transform: scale(1.1);transition: all 0.5s ease;}
+
+/* Upcoming events*/
+
+.upcoming-events{background-color: #fff;}
+.events-tabs #pills-thisWeek-tab.active::after{width: 64px; left: 47px;}
+.events-tabs #pills-weekend-tab.active::after{width: 56px; left: 43px;}
+
+.upcoming-events .event-item img{height: 280px; object-fit: cover; cursor: pointer;}
+.upcoming-events .event-item{position: relative; box-shadow: 2px 2px 20px #dfdfdf;}
+.upcoming-events .event-item header h5{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 36px;
+}
+.upcoming-events .event-item header p{color: #FF9100; font-weight: bold;}
+.upcoming-events .event-item .event-details .event-location{color: #868686}
+.upcoming-events .event-item .event-details i{margin-top: 4px;}
+.upcoming-events .event-item .event-details p{margin-left: 5px;}
+/*
+.upcoming-events .event-item::after{
+    content: 'Feb14';
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    width: 55px;
+    height: 75px;
+    right: 30px;
+    background-color: #FF9100;
+}*/
+
+/*events navs & dots*/
+.upcoming-events .owl-carousel .owl-nav button{
+    width:25px;
+    height:25px;
+    font-size: 28px;
+    font-weight: bolder;
+    color: #767676;
+    position: absolute;
+    top:35%;
+}
+.upcoming-events .owl-carousel .owl-nav button.owl-prev{left:-25px;}
+.upcoming-events .owl-carousel .owl-nav button.owl-next{right:-25px;}
+
+.upcoming-events .owl-dots, .style-item-content .owl-dots{text-align: center;}
+.upcoming-events .owl-dots .owl-dot,.style-item-content .owl-dots .owl-dot{
+    width:10px;
+    height:10px;
+    margin: 0 3px;
+    background-color: #c8c8c8!important;
+    border-radius: 50%;
+}
+.upcoming-events .owl-dots .owl-dot.active,.style-item-content .owl-dots .owl-dot.active{background-color: #999 !important;}
+
+
+.upcoming-events .all-events-btn, .upcoming-events .all-events-btn a {color: #FF9100; font-weight: bold;}
+.upcoming-events .all-events-btn a:hover{padding-right: 10px !important;transition: all 0.5s ease-in-out;}
+
+/* recommendations*/
+.recommendations .recommendations-item,#yourEgyptStyle-body .style-item-type{position: relative; cursor: pointer;}
+.recommendations .recommendations-item img{ object-fit: cover; height: 370px;}
+.recommendations .recommendations-item .recommend-details, #yourEgyptStyle-page .style-item-type .style-item-details{
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 30px);
+    height: 76px;
+    background-color: rgba(0, 0, 0, 0.53);
+    color: #fff;
+}
+.recommendations .recommendations-item:hover .recommend-details,#yourEgyptStyle-page .style-item-type:hover .style-item-details{
+    height: 90px; transition: all 0.5s ease-in-out;}
+
+.recommend-details h5{font-size: 26px; font-weight: bold;}
+.recommend-details p{font-size: 14px;}
+
+.recommendations-btn{margin: auto;}
+.recommendations a.show-recommendations{background-color: #FF9100;border: 4px solid #FF9100;  color: #fff;border-radius: 0;}
+
+.recommendations a.show-recommendations:hover{
+    color: #FF9100; 
+    background-color: transparent; 
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Gallery */
+.gallery-img{overflow: hidden;}
+.gallery .row > div, .gallery .row{padding: 0; margin: 0;}
+.gallery img{height: 250px; object-fit: cover;}
+.gallery .gallery-img:hover img{transform: scale(1.1); transition: all 0.8s ease-in-out;}
+
+
+/* Partners*/
+
+.partners img{object-fit: cover; height: 200px;}
+
+
+
+/* Footer */
+
+#main-footer{color: #fff;background: url(../images/landing-page/footer.jpg) no-repeat 50% 50%;background-size: cover;}
+#main-footer-blur{background-color: rgba(0,0,0,0.9);}
+.social-items .social-item{background-color: #1D1D1D;}
+.social-items .social-item a{color: #fff; padding: 10px;}
+.social-items .social-item:first-of-type:hover{background-color: #3a559f; transition: all 0.3s ease-in-out;}
+.social-items .social-item:nth-of-type(2):hover{background-color: #50abf1; transition: all 0.3s ease-in-out;}
+.social-items .social-item:nth-of-type(3):hover{background-color: #cd1e7c; transition: all 0.3s ease-in-out;}
+.social-items .social-item:last-of-type:hover{background-color: #c00000; transition: all 0.3s ease-in-out;}
+
+.footer-content{padding-bottom: 150px;}
+.footer-info header h3{color: #5E5E5E; font-weight: bold; font-size: 18px;position: relative;}
+.footer-info header h3::before{
+    position: absolute;
+    content: '';
+    width: 70px;
+    height: 3px;
+    top: 35px;
+    background-color: #5E5E5E;
+    border-radius: 5px;
+}
+.footer-info p{font-size: 14px; color: #C0C0C0;}
+.footer-info .location a,.event-location a{font-size: 14px; color: #fff;}
+.footer-info .location:hover i,.event-location:hover i {padding-left: 5px;}
+.footer-info .location:hover a,.footer-info .location:hover i,.event-location a,.event-location i{
+    color: #FF9100; 
+    font-weight: bold; 
+    transition: all 0.3s ease-in-out; 
+    text-decoration: none;
+    }
+
+.footer-info a{color: #fff; position: relative;}
+.footer-info a:hover{color: #FF9100; transition: all 0.3s ease-in-out;}
+.footer-info nav{position: relative;}
+.footer-info nav a:hover::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    left: -10px;
+    background-color: #FF9100;
+}
+.footer-info .contact{background-color: #FF9100; font-size: 16px;}
+.footer-info .contact a{font-size: 16px;}
+.footer-info .contact:hover{background-color: transparent; border: 3px solid #FF9100; transition: all 0.3s ease-in-out;}
+.footer-info .contact:hover a{color: #fff; transition: all 0.3s ease-in-out;}
+/*copy rightss*/
+.copy-rights{background-color: #000;}
+.copy-rights span{color: #FF9100; font-weight: bold;}
+
+
+
+
+/************************************Login-Signup & Contactus page*************************************/
+
+
+#login-body,#signup-body,#contactUs-body{background: url(../images/landing-page/footer.jpg) no-repeat 50% 50%;background-size: cover; height: 620px;}
+#login-body .login-blur,#signup-body .signup-blur,#contactUs-body .contactUs-blur{background-color: rgba(0,0,0,0.9); height: 620px;}
+#login-body .login-form,#signup-body .signup-form,#contactUs-body .contactUS-form{background-color: #fff; border-radius: 15px; box-shadow: 2px 2px 15px #4f4f4f;}
+#login-body .login-form h2,#signup-body .signup-form h2,#contactUs-body .contactUs-form h2{font-weight: bold;}
+
+#login-body .login-form .btn-login,#signup-body .signup-form .btn-signup,#contactUS-body .contactUs-form .btn-contactUs{background-color: #FF9100; color: #fff;}
+#login-body .login-form .btn-login:hover,#signup-body .signup-form .btn-signup:hover,#contactUs-body .contactUs-form .btn-contactUs:hover{background-color: #ef8800; transition: all 0.3s ease-in-out;}
+#main-footer.login-footer #main-footer-blur,#main-footer.signup-footer #main-footer-blur,#main-footer.contactUs-footer #main-footer-blur{background-color: rgba(0, 0, 0, 1);}
+textarea{resize: none;height: 80px!important;}
+
+/************************************Your Egypt Style page*************************************/
+
+#yourEgyptStyle-body .yourEgyptStyle-main{background: url(../images/egypt-style/main-photo.jpeg) no-repeat 50% 50%;background-size: cover; height: 610px;}
+#yourEgyptStyle-body .yourEgyptStyle-main .yourEgyptStyle-blur{background-color: rgba(0,0,0,0.8); height: 610px;}
+#yourEgyptStyle-body .yourEgyptStyle-main .yourEgyptStyle-mainContent{position: relative; margin-left: 40px;}
+#yourEgyptStyle-body .yourEgyptStyle-main .yourEgyptStyle-mainContent::before{
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 100%;
+    left: -35px;
+    background-color: #fff;
+}
+#yourEgyptStyle-body .yourEgyptStyle-main h1{color: #fff;font-size: 100px;font-weight: bold;}
+#yourEgyptStyle-body .yourEgyptStyle-main h2{color: #FF9100;font-size: 80px;font-weight: bold;}
+
+/* Egypt style item*/
+.type-bg{position: relative;}
+.style-type-blur{
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5); 
+    height: 550px;
+    top: 0;
+}
+#yourEgyptStyle-page .style-type{margin-bottom: 360px;position: relative;}
+#yourEgyptStyle-page .style-type img{height: 550px; object-fit: cover;}
+#yourEgyptStyle-page .style-item-content{
+    position: absolute;
+    background-color: #fff;
+    top: 480px;
+    width: 75%;
+    box-shadow: 2px 2px 20px #d9d9d9;
+}
+
+#yourEgyptStyle-body .style-type .style-item-type img{height: 300px; object-fit: cover;}
+
+/* *************************************Events Calendar page************************************* */
+
+#eventsCalendar-page .upcomingEvents-main{
+    background: url(../images/eventsCalendar/eventsCalendar-header.jpeg) no-repeat 50% 50%;
+    background-size: cover; 
+    height: 610px;
+    color: #fff;
+}
+#eventsCalendar-page .upcomingEvents-main .upcomingEventsblur{background-color: rgba(0,0,0,0.8); height: 610px;}
+#eventsCalendar-page .upcomingEvents-main h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 75px;
+    padding-top: 150px;
+}
+
+.searchEvents{background-color: #FF9100;}
+.searchEvents h2{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 40px;}
+.searchEvents .form-group{position: relative;}
+.searchEvents .form-group >div{background-color: #fff;}
+.searchEvents .form-group input {height: 100%; border-radius: 0; border: none; margin-left: 2px; margin-right: 10px;}
+
+.eventsDates-group button{
+    background-color: #ffffff;
+    color: #808080;
+    font-weight: bold;
+    border: none;
+    border-radius: 0;
+}
+.eventsDates-group button:not(:last-of-type){border-right: 2px solid #FF9100;}
+.searchEvents .dropdown button{background-color: #FF9100;border: 2px solid #fff;border-radius: 0;}
+.allUpcomingEvents section{margin-left: 15px;margin-right: 15px }
+.allUpcomingEvents article.upcomingEvent {height: 300px;box-shadow: 2px 2px 20px #d9d9d9;}
+.allUpcomingEvents article.upcomingEvent img{object-fit: cover; width: 400px; height: 100%;}
+.allUpcomingEvents header.allupcomingEvents-date h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    border-bottom: 3px solid #FF9100;
+}
+.allUpcomingEvents header h5{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 40px;}
+.allUpcomingEvents header p{color: #FF9100; font-weight: bold;font-size: 18px;}
+
+.allUpcomingEvents .eventDetails-btn a{background-color: #FF9100; font-size: 16px; color: #fff; border-radius: 0;padding: 10px 15px;}
+.allUpcomingEvents .eventDetails-btn a:hover{
+    background-color: transparent;
+    border: 3px solid #FF9100;
+    transition: all 0.3s ease-in-out;
+    color: #FF9100;
+}
+.nextEvents button{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-size: 20px; 
+    margin-right: 15px ;
+}
+.nextEvents:hover{color: #FF9100;transition: all 0.2s ease-in-out}
+.nextEvents:hover button{color: #FF9100;margin-right: 5px ;transition: all 0.2s ease-in-out;}
+
+/* *************************************Events Details page************************************* */
+
+#eventsDetails-page .eventsDetails-main{
+    background: url(../images/eventsCalendar/event1.jpeg) no-repeat 50% 50%;
+    background-size: cover; 
+    height: 480px;
+    color: #fff;
+}
+#eventsDetails-page .eventsDetails-main .eventsDetails-blur{background-color: rgba(0,0,0,0.6); height: 480px;}
+#eventsDetails-page .event-content {margin: 0 15px;box-shadow: 2px 2px 20px #d9d9d9; position: relative;}
+#eventsDetails-page .event-content header h2{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 46px;}
+#eventsDetails-page .event-content header p{color: #FF9100; font-weight: bold;font-size: 18px;}
+.eventContactInfo .list-group .list-group-item{padding: 5px 0; border: none; font-size: 14px;}
+#eventsDetails-page h4{font-weight: bold; padding: 0; margin: 0;}
+#eventsDetails-page aside .toEventCalendar{border: 4px solid #FF9100;background-color: #FF9100;}
+#eventsDetails-page aside .toEventCalendar a{font-size: 20px; color: #fff; font-weight: bold;}
+#eventsDetails-page aside .toEventCalendar:hover{background-color: #fff; transition: all 0.3s ease-in-out;}
+#eventsDetails-page aside .toEventCalendar:hover a{color: #FF9100; transition: all 0.3s ease-in-out;}
+#eventsDetails-page aside .owner,.event-info.list-group{box-shadow: 2px 2px 20px #d9d9d9; }
+.event-info h5{font-weight: bold; margin-bottom: 2px;}
+.event-info li:last-of-type a{color: #FF9100; font-weight: bold;}
+
+/************************************Submit Your Event page*************************************/
+
+#submitEvent-body .submitEvent-main{background: url(../images/eventsCalendar/submitevents.jpeg) no-repeat 50% 50%;background-size: cover; height: 500px;}
+#submitEvent-body .submitEvent-main .submitEvent-blur{background-color: rgba(0,0,0,0.8); height: 500px;}
+#submitEvent-body .submitEvent-main{position: relative;}
+#submitEvent-body .submitEvent-main h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #FF9100;
+    font-size: 80px;
+    padding-top: 170px;
+}
+.submitEvent-form{background-color: #F4F4F4;}
+.submitEvent-form form{padding: 50px 150px !important;}
+.submitEvent-form form section{background-color: #fff;}
+.submitEvent-form form section header{border-bottom: 1px dashed #FF9100;}
+.submitEvent-form form section header h3{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+.submitEvent-form form section label{font-weight: bold; color: #5E5E5E;}
+.submitEvent-form form section h6{font-weight: bold; color: #4f4f4f; font-size: 20px;}
+.submitEvent-btn{color: #fff;background-color: #FF9100; border-radius: 0; padding: 10px 30px; font-weight: bold;}
+.submitEvent-btn:hover{background-color: #ef8800;color: #fff; transition: all 0.3s ease-in-out;}
+
+/* *************************************Recommendations page************************************* */
+
+#recommendations-page .recommendations-main{
+    background: url(../images/recommendations/reommend-header.jpeg) no-repeat 50% 50%;
+    background-size: cover; 
+    height: 480px;
+    color: #fff;
+}
+#recommendations-page .recommendations-main .recommendations-blur{background-color: rgba(0,0,0,0.6); height: 480px;}
+
+#recommendations-page .categorization{background-color: #FF9100;}
+#recommendations-page .categorization h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-weight: bold; 
+    font-size: 40px;
+}
+
+#recommendations-page .categorization .dropdown button{background-color: #FF9100;border: 2px solid #fff;border-radius: 0;}
+
+.all-recommendations .card-body header h5{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 36px;}
+.all-recommendations .card-body header p{color: #FF9100; font-weight: bold;font-size: 16px;}
+.all-recommendations .card-body p{margin: 0;}
+.all-recommendations .card > a{overflow: hidden;}
+.all-recommendations .card > a:hover img{transform: scale(1.1); transition: all 0.6s ease-in-out;}
+.all-recommendations .card > a img{
+    object-fit: cover;
+    height: 230px;
+    width: 100%;
+}
+.all-recommendations .card footer{padding: 15px 0 0; font-size: 12px; font-weight: bold; color: #868686;}
+.all-recommendations .card footer span{font-style: italic; color: #000;}
+
+/* *************************************Favorutites page************************************* */
+
+.profile-info .profile-img{width: 280px; height: 280px;margin: 0 auto; overflow: hidden; border-radius: 50%;}
+.profile-info .profile-img:hover img{transform: scale(1.2) rotate(10deg); transition: all 1s ease-in-out;}
+.profile-info img{width: 100%; height: 100%; object-fit: cover; border-radius: 50%;}
+.profile-info h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+}
+
+.profile-socials .social-items li{border-radius: 50%; height: 50px; width: 50px;}
+.profile-socials .social-items li a{height: 100%; width: 100%; padding: 0; border-radius: 50%; }
+
+
+.profile-socials li:first-of-type{background-color: #3a559f; transition: all 0.3s ease-in-out;}
+.profile-socials li:nth-of-type(2){background-color: #50abf1; transition: all 0.3s ease-in-out;}
+.profile-socials li:nth-of-type(3){background-color: #cd1e7c; transition: all 0.3s ease-in-out;}
+.profile-socials li:last-of-type{background-color: #c00000; transition: all 0.3s ease-in-out;}
+
+
+
+
+
+.profile-favourites, .profile-info-content{box-shadow: 2px 2px 20px #d9d9d9; background-color: #f4f4f4;}
+
+
+.favourite-item{height: 220px;box-shadow: 2px 2px 20px #d9d9d9; color: #000; }
+.favourite-item img{object-fit: cover; height: 100%; width: 300px;}
+.favourite-item header h5{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 28px;
+}
+.favourite-item:hover{background-color: #fff; transition: all 0.3s ease-in-out;}
+.favourite-item header .favourite-icon i{color: #FF9100; cursor: pointer; margin-right: 10px;}
+.favourite-item .favourite-info > p{font-size: 14px;}
+.favourite-item header p{color: #FF9100; font-weight: bold;}
+
+.favourite-item .favoriteDetails-btn button{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-size: 20px; 
+    margin-right: 15px ;
+}
+.favourite-item .favoriteDetails-btn:hover{color: #FF9100;transition: all 0.2s ease-in-out}
+.favourite-item .favoriteDetails-btn:hover button{color: #FF9100;margin-right: 5px ;transition: all 0.2s ease-in-out;}
+.profile-tabs a{padding-left: 0; padding-right: 30px;}
+.profile-tabs {border-bottom: 2px solid #FF9100;}
+
+
+/**************************************Media Query**************************************/
+
+
+@media only screen and (max-width: 767px){
+/* ///////////////////////////////////////////////// Home Page */
+    #carousel img{height: 450px !important;}
+    #carousel .carousel-blur{height: 450px !important;}
+    .aboutus h2{font-size: 50px}
+    .stars i{font-size: 30px;}
+    .explore h2,.upcoming-events h2{font-size: 40px !important;}
+    .explore h4,.upcoming-events h4{font-size: 18px !important;}
+    .explore-tabs a{font-size: 16px !important;}
+    .explore-tabs #pills-style-tab.active::after{width: 60px; left: 54px;}
+    .explore-tabs #pills-todo-tab.active::after{width: 55px; left: 40px;}
+    .event-item{display: block !important;}
+    .footer-content{padding-bottom: 0 !important}
+    .footer-informations{text-align: center; padding: 0; width: 100%; margin: 0;}
+    .footer-info{padding: 0;}
+    .footer-informations nav a{display: inline-block !important;}
+    .footer-informations .contact{margin: 0 !important;}
+/* ///////////////////////////////////////////////// Egypt Style Page */
+    #yourEgyptStyle-page .style-item-content{
+        position: relative !important;
+        top: 0 !important;
+        width: 100% !important;
+    }
+    #yourEgyptStyle-body .style-type{margin-bottom: 40px !important;}
+/* ///////////////////////////////////////////////// Login & Signup & Contact Us Page */
+    .login-form,.signup-form,.contactUs-form{margin-right: 15px;margin-left: 30px;}
+/* ///////////////////////////////////////////////// Sumbit Event Page */
+    #submitEvent-body .submitEvent-main{ height: 400px;}
+    #submitEvent-body .submitEvent-main .submitEvent-blur{height: 400px;}
+    #submitEvent-body .submitEvent-main h1{font-size: 56px;padding-top: 120px;}
+
+/* ///////////////////////////////////////////////// Event Calendar Page */
+    .allUpcomingEvents article.upcomingEvent {display: block !important; height: auto;}   
+    .allUpcomingEvents article.upcomingEvent .event-info{padding-left: 10px !important; padding-bottom: 20px;}
+    .allUpcomingEvents article.upcomingEvent img{width: 100%!important; height: 200px;}
+    .allUpcomingEvents article.upcomingEvent header{padding-bottom: 3px !important;}
+/* ///////////////////////////////////////////////// Event Details Page */
+    #eventsDetails-page .eventsDetails-main{height: 300px;}
+    #eventsDetails-page .eventsDetails-main .eventsDetails-blur{height: 300px;}
+/* ///////////////////////////////////////////////// Favourites Page */
+    .favourite-item{display: block !important;height: auto;}
+    .favourite-item img{height: 200px; width: 100%;}
+    .favourite-info{padding-bottom: 20px;}
+/* ///////////////////////////////////////////////// Recommendations Page */
+    #recommendations-page .recommendations-main{height: 300px}
+    #recommendations-page .recommendations-main .recommendations-blur{height: 300px !important;}
+    .categorizations-contain {display: block !important; text-align: center;}
+    .categorizations-contain h2{ padding-bottom: 10px; font-size: 34px !important;}
+}
+
+@media only screen and (max-width: 991px){
+/* ///////////////////////////////////////////////// Egypt Style Page */
+    #yourEgyptStyle-page .style-type img{height: 450px }
+    .style-type-blur{height: 450px;}
+    #yourEgyptStyle-page .style-item-content{top: 390px; width: 85%;}
+    #yourEgyptStyle-page .style-item-type .style-item-details{height: 90px;}
+    #yourEgyptStyle-body .style-type{margin-bottom: 310px;}
+    #yourEgyptStyle-body .style-type .style-item-type img{height: 260px;}
+/* ///////////////////////////////////////////////// Sumbit Event Page */
+    .submitEvent-form form{padding: 50px 0px !important;}
+
+/* ///////////////////////////////////////////////// Event Calendar Page */
+    .searchEvents .eventsDates-group{display: block;}
+    .search-eventForm{margin-bottom: 5px; padding: 0 !important; padding-left: 15px !important;}
+    .allUpcomingEvents article.upcomingEvent img{width: 300px;}
+    .allUpcomingEvents article.upcomingEvent .event-info{padding-left: 20px !important;}
+    .allUpcomingEvents article.upcomingEvent header{padding-bottom: 3px !important;}
+    .allUpcomingEvents article.upcomingEvent h5{font-size: 30px;}
+    .allUpcomingEvents article.upcomingEvent p {font-size: 14px; margin-bottom: 10px;}
+    .allUpcomingEvents article.upcomingEvent a{font-size: 14px; padding: 10px;}
+
+    
+}
