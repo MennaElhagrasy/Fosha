@@ -543,7 +543,8 @@ textarea{resize: none;height: 80px!important;}
     #carousel .carousel-blur{height: 450px !important;}
     .aboutus h2{font-size: 50px}
     .stars i{font-size: 30px;}
-    .explore h2,.upcoming-events h2,.recommendations h2{font-size: 40px !important;}
+    .explore h2,.upcoming-events h2{font-size: 40px !important;}
+    .recommendations h2{font-size: 30px;}
     .explore h4,.upcoming-events h4,.recommendations h4{font-size: 18px !important;}
     .explore-tabs a{font-size: 16px !important;}
     .explore-tabs #pills-style-tab.active::after{width: 60px; left: 54px;}
