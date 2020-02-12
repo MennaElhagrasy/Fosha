@@ -165,7 +165,7 @@ background-color: #FF9100;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 36px;
 }
-.upcoming-events .event-item header p{color: #FF9100; font-weight: bold;}
+.upcoming-events .event-item header p{color: #FF9100; font-weight: bold; padding-right: 50px;}
 .upcoming-events .event-item .event-details .event-location{color: #868686}
 .upcoming-events .event-item .event-details i{margin-top: 4px;}
 .upcoming-events .event-item .event-details p{margin-left: 5px;}
