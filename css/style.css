@@ -537,10 +537,12 @@ textarea{resize: none;height: 80px!important;}
 /**************************************Media Query**************************************/
 @media only screen and (max-width: 576px){
 
-    .upcoming-events .event-item{margin-left: 25px !important; margin-right: 25px !important;}
+    .upcoming-events .event-item{margin-left: 10px !important; margin-right: 10px !important;}
     .upcoming-events .event-item img{height: 200px !important;}
     .upcoming-events .event-infoContainer{padding: 0 !important; padding-right: 5px !important; }
+    .upcoming-events .events{padding-right: 15px !important; padding-left: 15px !important;}
 }
+
 
 @media only screen and (max-width: 767px){
 /* ///////////////////////////////////////////////// Home Page */
@@ -552,7 +554,6 @@ textarea{resize: none;height: 80px!important;}
     .explore h4,.upcoming-events h4,.recommendations h4{font-size: 18px !important;}
     .upcoming-events .events{padding-right: 30px; padding-left: 30px;}
     .upcoming-events .event-item h5{font-size: 28px !important;}
-    .upcoming-events .event-infoContainer .event-details{font-size: 13px;}
     .explore-tabs a{font-size: 16px !important;}
     .explore-tabs #pills-style-tab.active::after{width: 60px; left: 54px;}
     .explore-tabs #pills-todo-tab.active::after{width: 55px; left: 40px;}
@@ -595,9 +596,13 @@ textarea{resize: none;height: 80px!important;}
     .categorizations-contain h2{ padding-bottom: 10px; font-size: 34px !important;}
 }
 
-@media only screen and (max-width: 991px){
-    
+
+@media only screen and (max-width: 991px) and (min-width: 768px){
+
     .upcoming-events .event-item h5{font-size: 34px !important;}
+}
+
+@media only screen and (max-width: 991px){
     .upcoming-events .event-infoContainer .event-details{font-size: 13px;}
 /* ///////////////////////////////////////////////// Egypt Style Page */
     #yourEgyptStyle-page .style-type img{height: 450px }
