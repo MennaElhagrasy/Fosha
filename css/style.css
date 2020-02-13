@@ -544,6 +544,7 @@ textarea{resize: none;height: 80px!important;}
 
     
 #eventsCalendar-page .upcomingEvents-main h1 {font-size: 44px !important;}
+.eventsDates-group button{font-size: 12px; padding: 3px 5px !important;}
 }
 
 
@@ -586,6 +587,7 @@ textarea{resize: none;height: 80px!important;}
 #eventsCalendar-page .upcomingEvents-main .upcomingEventsblur{height: 420px;}
 #eventsCalendar-page .upcomingEvents-main h1 {font-size: 54px ; padding-top: 120px;}
 #eventsCalendar-page .upcomingEvents-main h3{font-size: 20px;}
+.searchEvents h2{font-size: 28px;}
     .allUpcomingEvents article.upcomingEvent {display: block !important; height: auto;}   
     .allUpcomingEvents article.upcomingEvent .event-info{padding-left: 10px !important; padding-bottom: 20px;}
     .allUpcomingEvents article.upcomingEvent img{width: 100%!important; height: 200px;}
@@ -630,7 +632,7 @@ textarea{resize: none;height: 80px!important;}
 
 /* ///////////////////////////////////////////////// Event Calendar Page */
     .searchEvents .eventsDates-group{display: block;}
-    .search-eventForm{margin-bottom: 5px; padding: 0 !important; padding-left: 15px !important;}
+    .search-eventForm{margin-bottom: 5px; padding: 0 !important; padding-left: 15px !important; margin-right: 0 !important;}
     .allUpcomingEvents article.upcomingEvent img{width: 300px;}
     .allUpcomingEvents article.upcomingEvent .event-info{padding-left: 20px !important;}
     .allUpcomingEvents article.upcomingEvent header{padding-bottom: 3px !important;}
