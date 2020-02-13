@@ -536,15 +536,17 @@ textarea{resize: none;height: 80px!important;}
 
 /**************************************Media Query**************************************/
 @media only screen and (max-width: 576px){
-
+/* ///////////////////////////////////////////////// Home Page */    
+    .logo{padding-left: 15px !important;}
+    .nav-button{margin-right: 15px !important;}
     .upcoming-events .event-item{margin-left: 10px !important; margin-right: 10px !important;}
     .upcoming-events .event-item img{height: 200px !important;}
     .upcoming-events .event-infoContainer{padding: 0 !important; padding-right: 5px !important; }
     .upcoming-events .events{padding-right: 15px !important; padding-left: 15px !important;}
 
-    
-#eventsCalendar-page .upcomingEvents-main h1 {font-size: 44px !important;}
-.eventsDates-group button{font-size: 12px; padding: 3px 5px !important;}
+/* ///////////////////////////////////////////////// Event Calendar Page */
+    #eventsCalendar-page .upcomingEvents-main h1 {font-size: 44px !important;}
+    .eventsDates-group button{font-size: 12px; padding: 3px 5px !important;}
 }
 
 
