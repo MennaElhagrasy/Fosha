@@ -72,7 +72,7 @@ background-color: #FF9100;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 70px;
 }
-.stars{color: #FF9100;width:340px;margin: 0 auto;}
+.stars{color: #FF9100;text-align: center;margin: 0 auto;}
 .stars i{margin: 0 5px; font-size: 48px;}
 .aboutus p, #yourEgyptStyle-body .aboutEgyptStyle p{margin: 20px 0; padding: 0 15px;}
 
@@ -603,8 +603,14 @@ textarea{resize: none;height: 80px!important;}
 }
 
 @media only screen and (max-width: 991px){
+    /* ///////////////////////////////////////////////// Landing Page */
     .upcoming-events .event-infoContainer .event-details{font-size: 13px;}
+
 /* ///////////////////////////////////////////////// Egypt Style Page */
+    #yourEgyptStyle-body .yourEgyptStyle-main{height: 450px;}
+    #yourEgyptStyle-body .yourEgyptStyle-main .yourEgyptStyle-blur{height: 450px;}
+    #yourEgyptStyle-body .yourEgyptStyle-main h1{font-size: 60px;}
+    #yourEgyptStyle-body .yourEgyptStyle-main h2{font-size: 45px;}
     #yourEgyptStyle-page .style-type img{height: 450px }
     .style-type-blur{height: 450px;}
     #yourEgyptStyle-page .style-item-content{top: 390px; width: 85%;}
