@@ -541,13 +541,16 @@ textarea{resize: none;height: 80px!important;}
     .upcoming-events .event-item img{height: 200px !important;}
     .upcoming-events .event-infoContainer{padding: 0 !important; padding-right: 5px !important; }
     .upcoming-events .events{padding-right: 15px !important; padding-left: 15px !important;}
+
+    
+#eventsCalendar-page .upcomingEvents-main h1 {font-size: 44px !important;}
 }
 
 
 @media only screen and (max-width: 767px){
 /* ///////////////////////////////////////////////// Home Page */
-    #carousel img{height: 450px !important;}
-    #carousel .carousel-blur{height: 450px !important;}
+    #carousel img{height: 400px !important;}
+    #carousel .carousel-blur{height: 400px !important;}
     .aboutus h2{font-size: 50px}
     .stars i{font-size: 30px;}
     .explore h2,.upcoming-events h2,.recommendations header h2{font-size: 32px !important;}
@@ -578,6 +581,11 @@ textarea{resize: none;height: 80px!important;}
     #submitEvent-body .submitEvent-main h1{font-size: 56px;padding-top: 120px;}
 
 /* ///////////////////////////////////////////////// Event Calendar Page */
+
+#eventsCalendar-page .upcomingEvents-main{height: 420px;}
+#eventsCalendar-page .upcomingEvents-main .upcomingEventsblur{height: 420px;}
+#eventsCalendar-page .upcomingEvents-main h1 {font-size: 54px ; padding-top: 120px;}
+#eventsCalendar-page .upcomingEvents-main h3{font-size: 20px;}
     .allUpcomingEvents article.upcomingEvent {display: block !important; height: auto;}   
     .allUpcomingEvents article.upcomingEvent .event-info{padding-left: 10px !important; padding-bottom: 20px;}
     .allUpcomingEvents article.upcomingEvent img{width: 100%!important; height: 200px;}
@@ -607,8 +615,8 @@ textarea{resize: none;height: 80px!important;}
     .upcoming-events .event-infoContainer .event-details{font-size: 13px;}
 
 /* ///////////////////////////////////////////////// Egypt Style Page */
-    #yourEgyptStyle-body .yourEgyptStyle-main{height: 450px;}
-    #yourEgyptStyle-body .yourEgyptStyle-main .yourEgyptStyle-blur{height: 450px;}
+    #yourEgyptStyle-body .yourEgyptStyle-main{height: 420px;}
+    #yourEgyptStyle-body .yourEgyptStyle-main .yourEgyptStyle-blur{height: 420px;}
     #yourEgyptStyle-body .yourEgyptStyle-main h1{font-size: 60px;}
     #yourEgyptStyle-body .yourEgyptStyle-main h2{font-size: 45px;}
     #yourEgyptStyle-page .style-type img{height: 450px }
